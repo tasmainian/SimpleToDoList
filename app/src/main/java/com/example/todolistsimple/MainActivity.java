@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public void removeItems(View view) {
         boolean isAnyChecked = false;
         int count = itemsAdapter.getCount();
-        for (int i = count - 1; i >= 0; i--) {
+        for (int i = 0; i < count; i++) {
             View v = listView.getChildAt(i);
             CheckBox checkBox = v.findViewById(R.id.checkbox);
             if (checkBox.isChecked()) {
