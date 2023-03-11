@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         items = new ArrayList<>();
         itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, R.id.item_text, items);
         listView.setAdapter(itemsAdapter);
-        //setUpListViewListening();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
